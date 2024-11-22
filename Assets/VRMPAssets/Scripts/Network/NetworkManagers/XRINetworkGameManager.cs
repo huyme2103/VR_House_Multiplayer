@@ -424,8 +424,8 @@ namespace XRMultiplayer
             if (transport != null)
             {
                 transport.ConnectionData.Address = "192.168.0.1"; // Địa chỉ IP của máy chủ
-                                                                  //transport.ConnectionData.Address = "127.0.0.1"; // Địa chỉ IP của máy chủ
-                transport.ConnectionData.Port = 7777;           // Cổng mặc định
+                //transport.ConnectionData.Address = "127.0.0.1"; // Địa chỉ IP của máy chủ
+               transport.ConnectionData.Port = 7777;           // Cổng mặc định
             }
 
             bool serverStarted = NetworkManager.Singleton.StartHost(); // Khởi động server
@@ -439,8 +439,8 @@ namespace XRMultiplayer
             if (transport != null)
             {
                 transport.ConnectionData.Address = "192.168.0.1"; // Địa chỉ IP của máy chủ
-                                                                  //transport.ConnectionData.Address = "127.0.0.1"; // Địa chỉ IP của máy chủ
-                transport.ConnectionData.Port = 7777;           // Cổng của server
+               //transport.ConnectionData.Address = "127.0.0.1"; // Địa chỉ IP của máy chủ
+               transport.ConnectionData.Port = 7777;           // Cổng của server
             }
 
             NetworkManager.Singleton.StartClient(); // Kết nối tới server
